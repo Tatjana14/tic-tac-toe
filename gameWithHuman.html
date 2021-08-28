@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac</title>
+    <link rel="stylesheet" href="styleWithHum.css">
+</head>
+<body>
+<header>
+    <div class="settings">
+        <p class="settings__text">Выбери размер поля и количество победных ячеек</p>
+        <span class="settings__span">(по умолчанию поле размером 4x4, количество победных ячеек - 4)</span>
+        <div class="settings__interface">
+            <input class="input" type="text" id="board-size-input" placeholder="Board:"/>
+            <input class="input" type="text" id="to-win-input" placeholder="To win:"/>
+            <button class="btn" id="submit-button" disabled >Submit</button>
+            <button class="btn" id="reset">RESET</button>
+        </div>
+        <a class="btn link" href="index.html">НА ГЛАВНУЮ</a>
+        <span class="alert" id="alert"></span>
+    </div>
+</header>
+<section id="'game">
+    <div class="game__container" id="game-container">
+        <div class="row x1">
+            <canvas id="x1 y1" width="100" height="100"></canvas>
+            <canvas id="x1 y2" width="100" height="100"></canvas>
+            <canvas id="x1 y3" width="100" height="100"></canvas>
+            <canvas id="x1 y4" width="100" height="100"></canvas>
+        </div>
+        <div class="row x2">
+            <canvas id="x2 y1" width="100" height="100"></canvas>
+            <canvas id="x2 y2" width="100" height="100"></canvas>
+            <canvas id="x2 y3" width="100" height="100"></canvas>
+            <canvas id="x2 y4" width="100" height="100"></canvas>
+        </div>
+        <div class="row x3">
+            <canvas id="x3 y1" width="100" height="100"></canvas>
+            <canvas id="x3 y2" width="100" height="100"></canvas>
+            <canvas id="x3 y3" width="100" height="100"></canvas>
+            <canvas id="x3 y4" width="100" height="100"></canvas>
+        </div>
+        <div class="row x4">
+            <canvas id="x4 y1" width="100" height="100"></canvas>
+            <canvas id="x4 y2" width="100" height="100"></canvas>
+            <canvas id="x4 y3" width="100" height="100"></canvas>
+            <canvas id="x4 y4" width="100" height="100"></canvas>
+        </div>
+    </div>
+</section>
+<script src="gameHu.js"></script>
+</body>
+</html>
